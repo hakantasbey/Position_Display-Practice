@@ -36,10 +36,13 @@ header .sign-in a:hover{
 }
 
 nav.sticky{
-    padding: 1rem;
+    padding: 2rem;
     background-color: #FAD961;
     background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav.sticky a{
@@ -59,7 +62,7 @@ nav.banner{
 
 nav.banner img{
     width: 100%;
-    max-height: calc(100vh - 202px);
+    max-height: calc(100vh - 172px);
 }
 
 nav.banner .hero{
@@ -87,5 +90,39 @@ nav.banner .hero h3{
 
 nav.banner button{
     padding: .7rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #D9AFD9;
+}
 
+nav.banner button:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+main{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.slack{
+    font-size: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #920101;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.slack:hover{
+    cursor: pointer;
+    outline: 2px solid #920101;
+    outline-offset: 3px;
+    color: black;
 }
